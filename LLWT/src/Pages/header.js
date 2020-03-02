@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-
+import { StyleSheet, Text, View, Image} from 'react-native';
+import headertxt from '../res/headertxt.png'
 export default function Header(){
     return(
         <View style={styles.header}>
 
-            <Text style={styles.title}>Levels</Text>
+<Image
+           style={styles.img}
+           source={headertxt} />
 
         </View>
 
@@ -18,7 +20,7 @@ header: {
 
     height:80,
     paddingTop: 25,
-    backgroundColor: 'coral',
+    backgroundColor: '#000',
 
 },
 
@@ -29,7 +31,15 @@ title: {
     fontSize: 25,
     fontWeight: 'bold',
 
-
 },
+
+img : {
+
+    width: '100%', 
+    height: '100%', 
+  
+    marginBottom : 10,
+    resizeMode: 'contain'
+  }
 
 });
