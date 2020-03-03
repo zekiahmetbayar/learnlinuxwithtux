@@ -3,8 +3,8 @@ import * as React from 'react';
 import { CardStyleInterpolators,createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { homePage} from './src/Pages/homePage';
-import { Levels } from './src/Pages/Levels';
-
+import { sectionsPage } from './src/Pages/sectionsPage';
+import { sectionPage } from './src/Pages/sectionPage';
 
 const Stack = createStackNavigator();
 
@@ -16,8 +16,10 @@ export default function App() {
     cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
   }}
   >
+        
         <Stack.Screen name="homePage" component={homePage} />
-        <Stack.Screen name="Levels" component={Levels} />
+        <Stack.Screen name="sectionPage" component={sectionPage} />
+        <Stack.Screen name="sectionsPage" component={sectionsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

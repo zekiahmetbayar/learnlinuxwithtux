@@ -18,7 +18,7 @@ export class homePage extends Component {
     }
 
     nextScreen = () =>{
-      this.props.navigation.navigate('Levels');
+      this.props.navigation.navigate('sectionsPage');
     }
 
     render() {

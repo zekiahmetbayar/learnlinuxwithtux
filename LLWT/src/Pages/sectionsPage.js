@@ -46,19 +46,31 @@ const DATA = [
     id: '8',
     title: 'sh',
   },
+
+  {
+    id: '9',
+    title: 'gedit',
+  },
+  {
+    id: '10',
+    title: 'sh',
+  },
+
+
 ];
 
 
 
 
-export class Levels extends Component {
+export class sectionsPage extends Component {
   constructor(props) {
     super(props);
   }
 
   nextScreen = () =>{
-    this.props.navigation.navigate('homePage');
+    this.props.navigation.navigate('sectionPage');
   }
+
 
   Item = ({ item }) => {
     return (
@@ -78,7 +90,7 @@ export class Levels extends Component {
       
       <View style={styles.bg}>
         <Header />
-       <ScrollView>
+       
         <View style={styles.container}>
           
             <FlatList
@@ -90,7 +102,7 @@ export class Levels extends Component {
             />
       
         </View> 
-           </ScrollView>
+          
       </View>
     );
   }
@@ -102,7 +114,7 @@ const styles = StyleSheet.create({
 
     borderRadius: 10,
     padding: 1,
-    marginBottom: 50,
+    marginBottom: 160,
     marginTop: 20,
    
   },
@@ -119,8 +131,6 @@ const styles = StyleSheet.create({
     width: '40%',
     height: 125,
     textAlign: 'center',
-    marginVertical: 8,
-    marginHorizontal: 16,
     marginLeft: '5%',
     marginRight: '5%',
     marginBottom: 20,
