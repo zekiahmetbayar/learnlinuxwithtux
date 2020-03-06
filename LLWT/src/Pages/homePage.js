@@ -8,8 +8,8 @@ import {
   Image,
   ImageBackground,
 } from 'react-native';
-import logo from '../res/main.png';
-import title from '../res/title.png'
+import logo from '../res/main.jpg';
+
 
 
 export class homePage extends Component {
@@ -29,14 +29,14 @@ export class homePage extends Component {
             source={logo}
                 > 
            
-           <Image
-           style={styles.img}
-           source={title} />
+           
   
            <View style = {styles.btn} >
   
-           <Button title='play' onPress={this.nextScreen} color='#ec4326' />
+           <Button title='play' onPress={this.nextScreen} color='#1f4059' />
            </View>
+
+          
            </ImageBackground> 
       </View>
         );
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     marginLeft: 'auto', 
     marginRight: 'auto',
     marginTop : 'auto',
-    marginBottom: 50
+    marginBottom: 125
    
   },
 

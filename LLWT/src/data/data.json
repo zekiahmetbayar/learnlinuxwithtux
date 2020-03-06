@@ -1,0 +1,101 @@
+{
+    
+    "commands" : [
+
+        {   "id"   : "00",
+            "name" : "pwd",
+            "title": "pwd - Print Working Directory",
+            "text" : " Kullanıcının bulunduğu dizini terminal ekranına bastırır.",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "01",
+            "name" : "ls",
+            "title": "ls - List Directory Contents",
+            "text" : " Tek başına kullanıldığında kullanıcının bulunduğu dizindeki dosya ve dizinleri karışık bir biçimde listler. ",
+            "parameter1" : "-l parametresi ile birlikte kullanıldığında dosya ve dizinleri uzun liste formatında terminale bastırır."  ,
+            "parameter2" : "-a parametresi ile birlikte kullanıldığında gizli dosya ve dizinleri de ekrana bastırır." ,
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "02",
+            "name" : "cd",
+            "title": "cd - Change Directory",
+            "text" : " Kullanıcının bulunduğu dizinden başka bir dizine geçmesine olanak tanır.",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "03",
+            "name" : "man",
+            "title": "man - Manuel",
+            "text" : " Kullanıcının öğrenmek istediği komutu parametre olarak alır, o komut hakkındaki dökümanı ekrana bastırır. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "04",
+            "name" : "mkdir",
+            "title": "mkdir - Make Directory",
+            "text" : " Kullanıcının yeni dizin oluşturmasına olanak tanır. Dizin adını parametre olarak alır. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "05",
+            "name" : "nano",
+            "title": "nano - Nano's ANOther Editor",
+            "text" : " Kullanıcının yeni dosya oluşturmasına olanak tanır. Dosya adını parametre olarak alır. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "06",
+            "name" : "cat",
+            "title": "cat - Concatenate",
+            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyayı terminale bastırır. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "07",
+            "name" : "mv",
+            "title": "mv - Move",
+            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyanın ismini değiştirir. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "08",
+            "name" : "rm",
+            "title": "rm - Remove",
+            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosya veya dizini siler. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "09",
+            "name" : "locate",
+            "title": "locate - Find Files by Name",
+            "text" : " Tek başına kullanıldığında parametre olarak aldığı kelimeyi sistemde arar, bulduğu sonuçları ekrana bastırır.",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        },
+
+        {   "id"   : "10",
+            "name" : "touch",
+            "title": "touch - Change File Timestamps",
+            "text" : " Tek başına kullanıldığında parametre olarak aldığı isimle bir dosya oluşturur. ",
+            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+
+        }
+
+
+
+
+       
+       
+    ]
+}
