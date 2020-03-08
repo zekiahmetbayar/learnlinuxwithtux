@@ -6,6 +6,7 @@ import { homePage} from './src/Pages/homePage';
 import { sectionsPage } from './src/Pages/sectionsPage';
 import { sectionPage } from './src/Pages/sectionPage';
 import { stagesPage } from './src/Pages/stagesPage';
+import { qPage } from './src/Pages/qPage';
 
 const Stack = createStackNavigator();
 
@@ -17,11 +18,12 @@ export default function App() {
     cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
   }}
   >
-        
+       
         <Stack.Screen name="homePage" component={homePage} />
         <Stack.Screen name="sectionPage" component={sectionPage} />
         <Stack.Screen name="sectionsPage" component={sectionsPage} />
         <Stack.Screen name="stagesPage" component={stagesPage} />
+        <Stack.Screen name="qPage" component={qPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

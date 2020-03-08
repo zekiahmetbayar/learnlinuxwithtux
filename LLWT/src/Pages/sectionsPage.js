@@ -90,7 +90,7 @@ export class sectionsPage extends Component {
             <Text id="txt" style={styles.tt}>
            {item.title} </Text>
          </ImageBackground>
-          
+         
         </TouchableOpacity>
       </View>
     );
@@ -106,7 +106,7 @@ export class sectionsPage extends Component {
       <ImageBackground
       style={{width: '100%', height: '103%'}}
       source={sectionsBg}
-          > 
+          >
       <View>
         <View style={{marginTop:80}} >
          
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     marginRight: '5%',
     marginBottom: 30,
     marginTop: 2,
-    
+   
   },
 
   title: {
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
 
   txtBox: {
 
-    
+   
     width: '100%',
     height: '100%',
 

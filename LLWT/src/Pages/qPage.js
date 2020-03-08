@@ -5,6 +5,7 @@ import {
   View,
   Image,
   ImageBackground,
+  TextInput,
   border,
   borderRadius,
   backgroundColor,
@@ -13,66 +14,56 @@ import {
 } from 'react-native';
 import { WebView } from 'react-native-webview';
 import HeaderSection from './headerSection';
-import Data from '../data/data.json'
+import Data from '../data/question.json'
 
 
-export class sectionPage extends Component {
- 
- 
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: this.props.route.params.command,
-      link: "dasdsa"
-    }
-  }
-
-  componentDidMount = () => {
-    {
-      Data.commands.map(commands => {
-        if (commands.name == this.state.title) {
-          console.log(commands.grade);
-          this.setState({ tt: commands.title });
-          this.setState({ link: commands.link });
-          this.setState({ text: commands.text });
+export class qPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          ques: this.props.route.params.ques,
+         
         }
-      })
+      }
+      componentDidMount = () => {
+        {
+            console.log(this.state.ques)
+          Data.question.map(question => {
+            if (question.category == this.state.ques) {
+              console.log(question.grade);
+              this.setState({ question: question.question });
+              this.setState({ text: question.text });
+              this.setState({ answer: question.answer });
+            }
+          })
+        }
+      }
+control=(text) =>{
+    if(text==this.state.answer){
+        this.props.navigation.navigate('homePage');
     }
-  }
-
-  nextScreen = () => {
-    this.props.navigation.navigate('qPage',{ques:this.state.title});
-  }
-
+}
   render() {
    
     return (
 
       <View style={{backgroundColor:'#fcfcfc'}} >
          
-        <View style={styles.videoStyle} >
        
-          <WebView
-            source={{ uri: this.state.link }}
-            javaScriptEnabled={true}
-            domStorageEnabled={true}
-          />
-        </View>
 
 
         <View style={styles.textBoxStyle} >
 
 
-          <Text style={styles.titleStyle}>{this.state.tt}</Text>
+          <Text style={styles.titleStyle}>{this.state.question}</Text>
           <Text style={styles.textStyle}> {this.state.text}</Text>
 
-          <View style={styles.btnNExt}>
-
-            <Button title='Soruya Geç ' onPress={ () => this.nextScreen() } color='#1f4059' />
-
-          </View>
-
+          <TextInput
+      style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+      onChangeText={() => this.control(text)}
+     
+    />
+       
         </View>
 
 
