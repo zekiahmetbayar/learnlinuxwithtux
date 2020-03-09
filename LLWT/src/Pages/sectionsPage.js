@@ -21,20 +21,20 @@ const DATA = [
   },
   {
     id: '2',
-    title: 'cd',
+    title: 'ls',
   },
   {
     id: '3',
-    title: 'mkdir',
+    title: 'cd',
   },
 
   {
     id: '4',
-    title: 'ls',
+    title: 'man',
   },
   {
     id: '5',
-    title: 'touch',
+    title: 'mkdir',
   },
   {
     id: '6',
@@ -43,25 +43,21 @@ const DATA = [
 
   {
     id: '7',
-    title: 'man',
+    title: 'cat',
   },
   {
     id: '8',
-    title: 'cat',
+    title: 'mv',
   },
 
   {
     id: '9',
-    title: 'mv',
-  },
-  {
-    id: '10',
     title: 'rm',
   },
   {
-    id: '11',
-    title: 'locate',
-  },
+    id: '10',
+    title: 'touch',
+  }
 
 
 

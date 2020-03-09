@@ -2,94 +2,108 @@
     
     "question" : [
 
-        {   "id"   : "00",
+        {   "id"   : "1",
             "category" : "pwd",
+            "next": "ls",
+
             "question": "Soru 1",
-            "text" : "Hangi dizinde olduğunnu gösteren komut?",
-            "answer" : "pwd"
-
+            "text" : " GNU/Linux işletim sistemini öğrenmeye yeni başlayan Tux, hangi dizinde olduğunu unutuyor. \n Tux'ın bulunduğu dizini öğrenmesi için hangi komutu kullanması gerekir ? ",
+            "answer" : "pwd",
+            "output" : "/home/tux"
+            
         },
 
-        {   "id"   : "01",
-            "name" : "ls",
-            "title": "ls - List Directory Contents",
-            "text" : " Tek başına kullanıldığında kullanıcının bulunduğu dizindeki dosya ve dizinleri karışık bir biçimde listler. ",
-            "parameter1" : "-l parametresi ile birlikte kullanıldığında dosya ve dizinleri uzun liste formatında terminale bastırır."  ,
-            "parameter2" : "-a parametresi ile birlikte kullanıldığında gizli dosya ve dizinleri de ekrana bastırır." ,
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "2",
+            "category" : "ls",
+            "next": "cd",
 
+            "question": "Soru 2",
+            "text" : " Bulunduğu dizini öğrenen Tux, bu dizindeki dosya ve dizinleri listelemek istiyor.\n Tux'ın bu isteğini gerçekleştirmek için hangi komutu kullanması gerekir ? ",
+            "answer" : "ls",
+            "output" : "total 8\n-rw-r--r--  1 tux tux   653 Ara 10 23:12  notlarım\ndrwxrwxr-x  2 tux tux  4096 Mar  3 22:06 derslerim"
+            
         },
 
-        {   "id"   : "02",
-            "name" : "cd",
-            "title": "cd - Change Directory",
-            "text" : " Kullanıcının bulunduğu dizinden başka bir dizine geçmesine olanak tanır.",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "3",
+            "category" : "cd",
+            "next": "man",
 
+            "question": "Soru 3",
+            "text" : " Derslerim dizinine girmek isteyen Tux, hangi komut/komutları kullanmalıdır ? ",
+            "answer" : "cd derslerim"
+            
         },
 
-        {   "id"   : "03",
-            "name" : "man",
-            "title": "man - Manuel",
-            "text" : " Kullanıcının öğrenmek istediği komutu parametre olarak alır, o komut hakkındaki dökümanı ekrana bastırır. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "4",
+            "category" : "man",
+            "next": "mkdir",
 
+            "question": "Soru 4",
+            "text" : " Derslerim dizininin içinde önceki derslerde öğrendiği ls komutu ile alt alta sıralama yapmak isteyen Tux kullanması gereken komutu unutuyor.\n Tux'ın ls komutunun dökümanını görmek için hangi komutu kullanması gerekir ?  ",
+            "answer" : "man ls",
+            "output" : "NAME\nls - list directory contents\nSYNOPSIS\nls [OPTION]... [FILE]...\nDESCRIPTION\nList  information  about  the FILEs (the current directory by default).\nSort entries alp....."
+            
         },
 
-        {   "id"   : "04",
-            "name" : "mkdir",
-            "title": "mkdir - Make Directory",
-            "text" : " Kullanıcının yeni dizin oluşturmasına olanak tanır. Dizin adını parametre olarak alır. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "5",
+            "category" : "mkdir",
+            "next": "nano",
 
+            "question": "Soru 5",
+            "text" : " Derslerim dizininin içinde 'uçmaderslerim' adında bir dizin oluşturmak isteyen Tux, hangi komut/komutları kullanması gerekir ? ",
+            "answer" : "mkdir uçmaderslerim"
+            
         },
 
-        {   "id"   : "05",
-            "name" : "nano",
-            "title": "nano - Nano's ANOther Editor",
-            "text" : " Kullanıcının yeni dosya oluşturmasına olanak tanır. Dosya adını parametre olarak alır. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "6",
+            "category" : "nano",
+            "next": "cat",
 
+            "question": "Soru 6",
+            "text" : " Tux, uçmaderslerim dizininin içine konularını not almak için penguenleruçarmı adında bir dosya oluşturup içinde değişiklik yapmak istiyor.\n Tux'ın bu işlemi gerçekleştirmesi için hangi komut/komutları kullanması gerekir ?  ",
+            "answer" : "nano penguenleruçarmı",
+            "output" : "Dosya İçeriği : \n\n Normal koşullarda kuşların uçabilmesi için, kanatlarıyla yere doğru kendi ağırlıklarını kaldırabilecek kadar hava göndermesi gerekiyor. Ancak bunun hızlıca ve sürekli olarak yapılmasıyla uçma sağlanabilir; ama penguenlerin kanatları... "            
         },
 
-        {   "id"   : "06",
-            "name" : "cat",
-            "title": "cat - Concatenate",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyayı terminale bastırır. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "7",
+            "category" : "cat",
+            "next": "mv",
 
+            "question": "Soru 7",
+            "text" : " Nano ile oluşturup, içeriğini değiştirdiği penguenleruçarmı dosyasını ekrana bastırmak isteyen Tux hangi komut/komutları kullanmalıdır ? ",
+            "answer" : "cat penguenleruçarmı",
+            "output" : " Normal koşullarda kuşların uçabilmesi için, kanatlarıyla yere doğru kendi ağırlıklarını kaldırabilecek kadar hava göndermesi gerekiyor. Ancak bunun hızlıca ve sürekli olarak yapılmasıyla uçma sağlanabilir; ama penguenlerin kanatları... "
+            
         },
 
-        {   "id"   : "07",
-            "name" : "mv",
-            "title": "mv - Move",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyanın ismini değiştirir. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "8",
+            "category" : "mv",
+            "next": "rm",
 
+            "question": "Soru 8",
+            "text" : " penguenleruçarmı adındaki dosyanın adını, penguenlernedenuçmuyor olarak değiştirmek isteyen Tux, bu işlemi gerçekleştirmek için hangi komut/komutları kullanmalıdır ? ",
+            "answer" : "mv penguenleruçarmı penguenlernedenuçmuyor"
+            
         },
 
-        {   "id"   : "08",
-            "name" : "rm",
-            "title": "rm - Remove",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosya veya dizini siler. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+        {   "id"   : "9",
+            "category" : "rm",
+            "next": "touch",
 
-        },
-
-        {   "id"   : "09",
-            "name" : "locate",
-            "title": "locate - Find Files by Name",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı kelimeyi sistemde arar, bulduğu sonuçları ekrana bastırır.",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
-
+            "question": "Soru 9",
+            "text" : " Penguenlerin asla uçamayacağını öğrenen Tux, aldığı notları içeren dosyayı silmek istiyor. Bu işlemi gerçekleştirmek için hangi komut/komutları kullanması gerekir ? ",
+            "answer" : "rm -rf penguenlernedenuçmuyor"
+            
         },
 
         {   "id"   : "10",
-            "name" : "touch",
-            "title": "touch - Change File Timestamps",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı isimle bir dosya oluşturur. ",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
+            "category" : "touch",
+            "next" : " last ",
 
+            "question": "Soru 10",
+            "text" : " Penguenlerin yeniden uçması için çalışmalar yürütmeye başlayan Tux Penguenler Uçsun adında bir kampanya başlatıyor. Bu kampanyanın metnini hazırlamak için şimdilik penguenleruçsun adında boş bir dosya oluşturmak isteyen Tux, bu işlemi gerçekleştirmek için hangi komut/komutları kullanmalıdır ? ",
+            "answer" : "touch penguenleruçsun"
+            
         }
 
 

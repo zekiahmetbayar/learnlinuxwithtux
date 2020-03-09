@@ -23,25 +23,44 @@ export class sectionPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: this.props.route.params.command,
+      
       link: "dasdsa"
     }
-  }
-
-  componentDidMount = () => {
-    {
+    this.props.navigation.addListener('focus', () => {
+      
+      
+ {
       Data.commands.map(commands => {
-        if (commands.name == this.state.title) {
-          console.log(commands.grade);
+        if (commands.name == this.props.route.params.command) {
+          this.setState({title:commands.name})
           this.setState({ tt: commands.title });
           this.setState({ link: commands.link });
           this.setState({ text: commands.text });
         }
       })
+      
     }
+    });
+    
   }
 
+  componentDidMount = () => {
+    {
+      Data.commands.map(commands => {
+        if (commands.name == this.props.route.params.command) {
+          this.setState({title:commands.name})
+          this.setState({ tt: commands.title });
+          this.setState({ link: commands.link });
+          this.setState({ text: commands.text });
+        }
+      })
+      
+     
+    }
+  }
+  
   nextScreen = () => {
+    
     this.props.navigation.navigate('qPage',{ques:this.state.title});
   }
 

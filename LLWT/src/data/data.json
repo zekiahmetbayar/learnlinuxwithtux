@@ -2,92 +2,83 @@
     
     "commands" : [
 
-        {   "id"   : "00",
+        {   "id"   : "1",
             "name" : "pwd",
             "title": "pwd - Print Working Directory",
-            "text" : " Kullanıcının bulunduğu dizini terminal ekranına bastırır.",
+            "text" : " pwd komutunu hangi dizinde (klasörde) olduğunuzu bulmak için kullanın. Sonuç olarak, komut size kesin ve tam bir konum verecektir. Konum genellikle bir bölme işaretiyle (/) başlar. İşte size tam bir konum örneği /home/kullaniciadi. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "01",
+        {   "id"   : "2",
             "name" : "ls",
             "title": "ls - List Directory Contents",
-            "text" : " Tek başına kullanıldığında kullanıcının bulunduğu dizindeki dosya ve dizinleri karışık bir biçimde listler. ",
-            "parameter1" : "-l parametresi ile birlikte kullanıldığında dosya ve dizinleri uzun liste formatında terminale bastırır."  ,
-            "parameter2" : "-a parametresi ile birlikte kullanıldığında gizli dosya ve dizinleri de ekrana bastırır." ,
+            "text" : " ls komutu bir dizinin içeriğini görmek için kullanılır. Varsayılan olarak, bu komut mevcut dizinin içeriğini görüntüleyecektir.\n\n\nEğer başka dizinlerin içeriğini görmek istiyorsanız ls ve dizinin konumunu girmelisiniz. Örneğin, Documents‘ın içeriğini görmek için ls /home/kullaniciadi/Documents komutunu girin. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "02",
+        {   "id"   : "3",
             "name" : "cd",
             "title": "cd - Change Directory",
-            "text" : " Kullanıcının bulunduğu dizinden başka bir dizine geçmesine olanak tanır.",
+            "text" : " Linux dosya sisteminde gezinmek için cd komutunu kullanın. Bulunduğunuz mevcut dizine bağlı olarak ya tam konum ya da dizinin adını gerektirir.\n\n\nDiyelim ki /home/kullaniciadi/Documents dizinindesiniz ve Documents‘ın alt dizini olan Photos‘a gitmek istiyorsunuz. Bunu yapmak için tek yapmanız gereken cd Photos komutunu girmektir.",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "03",
+        {   "id"   : "4",
             "name" : "man",
             "title": "man - Manuel",
-            "text" : " Kullanıcının öğrenmek istediği komutu parametre olarak alır, o komut hakkındaki dökümanı ekrana bastırır. ",
+            "text" : " Hangi komutun hangi işleve sahip olduğunu unuttunuz mu? Hiç merak etmeyin. Linux komutları listemizdeki son komut olan man komutunu kullanarak komutları Linux kabuğundan öğrenebilirsiniz. Örneğin, man tail komutunu girmek tail komutunun kullanım talimatını gösterecektir. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "04",
+        {   "id"   : "5",
             "name" : "mkdir",
             "title": "mkdir - Make Directory",
-            "text" : " Kullanıcının yeni dizin oluşturmasına olanak tanır. Dizin adını parametre olarak alır. ",
+            "text" : " mkdir komutunu yeni bir dizin oluşturmak için kullanın. Örneğin, mkdir Muzik, Muzik adlı yeni bir dizin oluşturacaktır.",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "05",
+        {   "id"   : "6",
             "name" : "nano",
             "title": "nano - Nano's ANOther Editor",
-            "text" : " Kullanıcının yeni dosya oluşturmasına olanak tanır. Dosya adını parametre olarak alır. ",
+            "text" : " Nano bir terminal uygulamasıdır. Bu yüzden Linux sunucunuz üzerinde terminal penceresi açarak veya direkt uzaktan ssh bağlantısı içerisinden kullanabilirsiniz. Nano ile “nano /dosya_dizini/dosya” şekline mevcut bir dosyayı düzenleyebileceğiniz gibi yine aynı şekilde nano editörünü başlatıp ilgili yazıları, komutları vs. yazıp daha sonra yeni dosya olarak da kayıt edebilirsiniz.",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "06",
+        {   "id"   : "7",
             "name" : "cat",
             "title": "cat - Concatenate",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyayı terminale bastırır. ",
+            "text" : " cat Linux’da sıklıkla kullanılan komutlardan biridir. Standart çıktıdaki (sdout) bir dosyanın içeriğini görmek için kullanılır. Bu komutu çalıştırmak için önce cat, daha sonra da dosya adını ve uzantısını girin. Örneğin: cat dosya.txt ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "07",
+        {   "id"   : "8",
             "name" : "mv",
             "title": "mv - Move",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosyanın ismini değiştirir. ",
+            "text" : " Linux komutları listemizdeki sıradaki komut ise mv komutu. Bu komutun ana kullanımı dosyaları taşımaktır ancak dosyaları yeniden adlandırmak için de kullanılabilir. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "08",
+        {   "id"   : "9",
             "name" : "rm",
             "title": "rm - Remove",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı dosya veya dizini siler. ",
+            "text" : " rm komutu ise dizinleri içindekilerle birlikte silmek için kullanılır. Eğer sadece dizini silmek istiyorsanız, rmdir’e bir alternatif olarak rm -r kullanın. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         },
 
-        {   "id"   : "09",
-            "name" : "locate",
-            "title": "locate - Find Files by Name",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı kelimeyi sistemde arar, bulduğu sonuçları ekrana bastırır.",
-            "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
-
-        },
 
         {   "id"   : "10",
             "name" : "touch",
             "title": "touch - Change File Timestamps",
-            "text" : " Tek başına kullanıldığında parametre olarak aldığı isimle bir dosya oluşturur. ",
+            "text" : " touch komutu komut satırı üzerinden yeni boş dosyalar oluşturmanızı izin verir. Örnek olarak Documents dizini altında Web adlı bir HTML dosyası oluşturmak için touch /home/kullaniciadi/Documents/Web.html girin. ",
             "link" : "https://www.youtube.com/embed/Gs8wX7VyAgw"
 
         }
