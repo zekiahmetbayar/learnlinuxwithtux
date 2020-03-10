@@ -38,7 +38,8 @@ export class qPage extends Component {
               this.setState({con:''})
               this.setState({nextCommand:question.next});
               this.setState({hideview:'200%'});
-              
+              this.setState({output:question.output})
+              this.setState({out:''})
             }
             
           })
@@ -52,6 +53,7 @@ handleAnswer = (text) => {
 correct= (cevap) => {
     if(this.state.answer==cevap){
       this.setState({hideview:'10%'});
+      this.setState({out:this.state.output})
       this.setState({con:'Doğru !'});
       
     }else{
@@ -81,6 +83,7 @@ nextCommand = () => {
           </View>
 
           <Text style={styles.textStyle}> {this.state.con}</Text>
+          <Text style={styles.textStyle}> {this.state.out}</Text>
 
           <View style={{marginTop:this.state.hideview, width:200, marginLeft:'auto',marginRight:'auto'}} >
             <Button title='Sıradaki Komut ' onPress={ () => this.nextCommand() } color='red' />
