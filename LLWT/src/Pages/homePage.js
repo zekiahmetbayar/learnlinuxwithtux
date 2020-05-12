@@ -18,9 +18,11 @@ export class homePage extends Component {
     }
 
     nextScreen = () =>{
-      this.props.navigation.navigate('sectionsPage');
+      this.props.navigation.navigate('levelsPage');
     }
-
+    nextScreens = () =>{
+      this.props.navigation.navigate('infoPage');
+    }
     render() {
         return (
           <View  style={styles.container} >
@@ -29,13 +31,16 @@ export class homePage extends Component {
             source={logo}
                 > 
            
-           
+           <View style={styles.butoncon}> 
   
            <View style = {styles.btn} >
-  
-           <Button title='play' onPress={this.nextScreen} color='#1f4059' />
+           <Button title='Başla' onPress={this.nextScreen} color='#1f4059' />
            </View>
 
+           <View style = {styles.btninf} >
+          <Button title='Hakkımızda' onPress={this.nextScreens} color='#1f4059' />
+          </View>
+            </View>
           
            </ImageBackground> 
       </View>
@@ -66,7 +71,21 @@ const styles = StyleSheet.create({
     marginLeft: 'auto', 
     marginRight: 'auto',
     marginTop : 'auto',
-    marginBottom: 125
+   
+   
+  },
+  btninf : {
+    width:200,
+    marginLeft: 'auto', 
+    marginRight: 'auto',
+    marginTop:15
+   
+   
+  },
+  butoncon : {
+    marginTop:'auto',
+    marginBottom:95
+   
    
   },
 

@@ -8,70 +8,77 @@ import {
   border,
   borderRadius,
   backgroundColor,
+  AsyncStorage,
   color,
   Text,
 } from 'react-native';
 import { WebView } from 'react-native-webview';
 import HeaderSection from './headerSection';
-import Data from '../data/data.json'
 
+import Terminal from 'react-native-terminal-component';
 
 export class sectionPage extends Component {
- 
- 
+
+
 
   constructor(props) {
     super(props);
     this.state = {
-      
+
       link: "dasdsa"
     }
     this.props.navigation.addListener('focus', () => {
-      
-      
- {
-      Data.commands.map(commands => {
-        if (commands.name == this.props.route.params.command) {
-          this.setState({title:commands.name})
-          this.setState({ tt: commands.title });
-          this.setState({ link: commands.link });
-          this.setState({ text: commands.text });
-        }
+
+
+      {
+      fetch("https://raw.githubusercontent.com/zekiahmetbayar/learnlinuxwithtux/master/LLWT/src/data/data.json")
+      .then((res) => res.json())
+      .then((json) => {
+        json.commands.map(commands => {
+          if (commands.name == this.props.route.params.command) {
+            this.setState({ title: commands.name })
+            this.setState({ tt: commands.title });
+            this.setState({ link: commands.link });
+            this.setState({ text: commands.text });
+          }
+        })
       })
-      
-    }
+      }
     });
-    
+
   }
 
   componentDidMount = () => {
     {
-      Data.commands.map(commands => {
+      fetch("https://raw.githubusercontent.com/zekiahmetbayar/learnlinuxwithtux/master/LLWT/src/data/data.json")
+      .then((res) => res.json())
+      .then((json) => {
+      json.commands.map(commands => {
         if (commands.name == this.props.route.params.command) {
-          this.setState({title:commands.name})
+          this.setState({ title: commands.name })
           this.setState({ tt: commands.title });
           this.setState({ link: commands.link });
           this.setState({ text: commands.text });
         }
       })
-      
-     
+    })
+
     }
   }
-  
+
   nextScreen = () => {
-    
-    this.props.navigation.navigate('qPage',{ques:this.state.title});
+
+    this.props.navigation.navigate('qPage', { ques: this.state.title });
   }
 
   render() {
-   
+
     return (
 
-      <View style={{backgroundColor:'#fcfcfc'}} >
-         
+      <View style={{ backgroundColor: '#fcfcfc' }} >
+
         <View style={styles.videoStyle} >
-       
+
           <WebView
             source={{ uri: this.state.link }}
             javaScriptEnabled={true}
@@ -84,19 +91,17 @@ export class sectionPage extends Component {
 
 
           <Text style={styles.titleStyle}>{this.state.tt}</Text>
-          <Text style={styles.textStyle}> {this.state.text}</Text>
-
+          <Text style={styles.textStyle}>{this.state.text}</Text>
+          <WebView
+          
+       source={{uri:'https://rohanchandra.gitlab.io/javascript-terminal/demo/'}}>
+       </WebView>
           <View style={styles.btnNExt}>
-
-            <Button title='Soruya Geç ' onPress={ () => this.nextScreen() } color='#1f4059' />
+            <Button title='Soruya Geç ' onPress={() => this.nextScreen()} color='#1f4059' />
 
           </View>
-
+        
         </View>
-
-
-
-
       </View>
 
 
@@ -123,7 +128,7 @@ const styles = StyleSheet.create({
 
   textBoxStyle: {
     height: '60%',
-
+    
 
   },
 
@@ -134,29 +139,35 @@ const styles = StyleSheet.create({
   },
 
   titleStyle: {
+    fontFamily: 'Ubuntu-R',
     marginTop: '5%',
     textAlign: 'center',
     fontSize: 25,
-    color:'#1f4059'
+    color: '#1f4059'
 
   },
 
   textStyle: {
+    marginHorizontal: '2%',
+    fontFamily: 'Ubuntu-L',
     marginTop: '5%',
-    textAlign: 'center',
+    textAlign: 'left',
     fontSize: 16,
-    color:'#1f4059'
+    color: '#1f4059'
 
   },
 
   btnNExt: {
 
 
+
     width: 200,
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: 'auto',
-    marginBottom: 50
+    marginTop: '5%',
+    marginBottom: 30
+
+
 
 
   }

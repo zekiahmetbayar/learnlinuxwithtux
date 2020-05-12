@@ -8,11 +8,14 @@ import {
   ScrollView,
   SafeAreaView,
   ImageBackground,
+  Alert,
   Image
 } from 'react-native';
 import box from '../res/box.png';
 import sectionsBg from '../res/sectionsBg.jpg';
 import Header from './header';
+import AsyncStorage from '@react-native-community/async-storage';
+
 
 const DATA = [
   {
@@ -72,10 +75,38 @@ export class sectionsPage extends Component {
   }
 
  
+  storeData = async ({item}) => {
+    console.log(item.title)
+    try {
+      var value = await AsyncStorage.getItem(item.title);
+      if (value == null) {
+      if(item.id!=1)
+        {await AsyncStorage.setItem(item.title,'false');}
+        else
+        {await AsyncStorage.setItem(item.title,'true');}
+      }
+    } catch (e) {
+        // saving error
+    }
+}
+
+  readStore = async ({item}) => {
+    try {
+      var value = await AsyncStorage.getItem(item.title);
+      if (value !== null) {
+        // We have data!!
+        console.log(value);
+        return value;
+      }
+    } catch (error) {
+      // Error retrieving data
+    }
+    
+  }
 
 
   Item = ({ item }) => {
-   
+   this.storeData({item});
     return (
       <View style={styles.item}>
         <TouchableOpacity onPress={ () => this.nextScreen({item}) }  >
@@ -92,9 +123,25 @@ export class sectionsPage extends Component {
     );
   }
 
+
+
  nextScreen = ({item}) =>{
-   console.log(item.title);
-    this.props.navigation.navigate('sectionPage',{command:item.title});
+  
+  this.readStore({item}).then((res) =>{
+  console.log(res)
+    if(res=='true'){
+    this.props.navigation.navigate('sectionPage',{command:item.title});}
+    else{
+      Alert.alert(
+        "Dikkat Tux",
+        "Yeni komuta erişebilmeniz için önceki komutun konusunu ve sorusunu bitirmelisiniz.",
+        [
+          
+          { text: "Tamam", onPress: () => console.log("Tamam") }
+        ],
+        { cancelable: false }
+      );
+    }});
   }
   render() {
     return (
