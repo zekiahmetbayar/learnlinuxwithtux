@@ -9,7 +9,8 @@
             "question": "Soru 1",
             "text" : " GNU/Linux işletim sistemini öğrenmeye yeni başlayan Tux, hangi dizinde olduğunu unutuyor. \n Tux'ın bulunduğu dizini öğrenmesi için hangi komutu kullanması gerekir ? ",
             "answer" : "pwd",
-            "output" : "/home/tux"
+            "output" : "/home/tux",
+            "next_id" : "2"
             
         },
 
