@@ -94,7 +94,7 @@
             "next": "touch",
 
             "question": "Soru 9",
-            "text" : " Penguenlerin asla uçamayacağını öğrenen Tux, aldığı notları içeren dosyayı silmek istiyor. Bu işlemi gerçekleştirmek için hangi komut/komutları kullanması gerekir ? ",
+            "text" : " Penguenlerin asla uçamayacağını öğrenen Tux, penguenlernedenuçmuyor adlı dosyaya aldığı notları içeren dosyayı silmek istiyor. Bu işlemi gerçekleştirmek için hangi komut/komutları kullanması gerekir ? ",
             "answer" : "rm -rf penguenlernedenuçmuyor",
             "output" : "total 8\n-rw-r--r--  1 tux tux   653 Ara 10 23:12  notlarım"
             
