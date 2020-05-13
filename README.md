@@ -1,6 +1,6 @@
 # Tux ile Linux Öğreniyorum
 
- Tux ile Linux Öğreniyorum Kraft Yazılım Ekibi'nin React Native teknolojisi kullanarak inşa ettiği bir mobil uygulamadır. Uygulamanın amacı korkusu merak duygusundan üstün gelen, daha önce GNU/Linux işletim sistemi ile tanışmamış ya da öğrenmek için uygun bir araç arayan, %100 Türkçe kaynak arayan kullanıcı kitlesine ulaşmaktır. 
+ Tux ile Linux Öğreniyorum Kraft Yazılım Ekibi'nin React Native teknolojisi kullanarak inşa ettiği bir mobil uygulamadır. Uygulamanın amacı korkusu merak duygusundan üstün gelen, daha önce GNU/Linux işletim sistemi ile tanışmamış ya da öğrenmek için uygun bir araç arayan, %100 Türkçe kaynak kriterine sahip kullanıcı kitlesine ulaşmaktır. 
 
  Uygulama yapısı aşağıda anlatıldığı gibidir :
 
@@ -12,6 +12,11 @@
 
 	4 - Destekleyici sorular ile öğrendiklerini pekiştirir.
 
+## Geliştiricilerden Not 
+
+ 1 - Proje içerisindeki sayfaların kodları LLWT/src/Pages içerisinde bulunmaktadır.
+ 
+ 2 - Projenin JSON tipi dosyaları src/data içerisinde bulunmaktadır. **Bu dosyalar proje içinde GitHub üzerinden online olarak çekilmektedir !**
 
 ## Gereksinimler
 
@@ -128,6 +133,26 @@
 > npm install 
 
  komutunu çalıştırmaları yeterli olacaktır.
+ 
+ ### Projenin Çalıştırılması
+
+ Öncelikle metro server'ı başlatalım.
+
+> npx react-native start
+
+ Sonrasında projeyi başlatacak fiziksel veya sanal bir cihaz olduğundan emin olalım.
+
+> adb devices
+
+ Listede cihazımızın adını görüyorsak projeyi çalıştırmak için hazırız demektir. Projeyi cihazımızda başlatalım.
+
+> npx react-native run-android
+
+## References 
+
+ Kurulum ile ilgili geliştiricilerimizden birinin [makalesi](https://medium.com/@zekiahmetbayar/react-native-ile-linux-%C3%BCzerinde-mobil-uygulama-geli%C5%9Ftirmek-48d1589407cd) referans olarak alınmıştır.
+ 
+  Uygulamanın tüm detaylarını öğrenmek için ilgili web sitesine [buradan](https://kraftyazilim.github.io) erişebilirsiniz.
 
 
 
