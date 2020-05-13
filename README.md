@@ -128,15 +128,27 @@
 
 ## Projenin Kurulumu
 
- Gereksinimleri sağlayan kullanıcıların proje klasörüne girip,
+ Gereksinimleri sağlayan kullanıcıların proje klasörüne öncelikle proje klasörüne girmesi gerekmektedir.
+
+> cd learnlinuxwithtux/LLWT
+
+ Sonrasında ise aşağıdaki komut ile gerekli paketlerin kurulması gerekmektedir.
 
 > npm install 
 
- komutunu çalıştırmaları yeterli olacaktır.
+ Paketlerin kurulması için yukardaki komutu çalıştırmaları yeterli olacaktır.
  
  ### Projenin Çalıştırılması
 
- Öncelikle metro server'ı başlatalım.
+ **Proje kurulum adımı gerçekleştirilmiş ise bu adıma geçilmelidir.**
+
+ **Eğer npm install komutu ile proje kurulmamışsa öncelikle bu adım gerçekleştirilmelidir**
+
+ Öncelikle GitHub'dan veya başka yollardan edindiğimiz proje klasörümüzün içine girelim
+
+> cd learnlinuxwithtux/LLWT
+
+ Şimdi ise metro server'ı başlatalım.
 
 > npx react-native start
 
@@ -144,15 +156,15 @@
 
 > adb devices
 
- Listede cihazımızın adını görüyorsak projeyi çalıştırmak için hazırız demektir. Projeyi cihazımızda başlatalım.
+ Listede cihazımızın adını görüyorsak projeyi çalıştırmak için hazırız demektir. Yeni bir terminal açıp projeyi cihazımızda başlatalım.
 
 > npx react-native run-android
 
-## References 
+## Referanslar
 
  Kurulum ile ilgili geliştiricilerimizden birinin [makalesi](https://medium.com/@zekiahmetbayar/react-native-ile-linux-%C3%BCzerinde-mobil-uygulama-geli%C5%9Ftirmek-48d1589407cd) referans olarak alınmıştır.
  
-  Uygulamanın tüm detaylarını öğrenmek için ilgili web sitesine [buradan](https://kraftyazilim.github.io) erişebilirsiniz.
+ Uygulamanın tüm detaylarını öğrenmek için ilgili web sitesine [buradan](https://kraftyazilim.github.io) erişebilirsiniz.
 
 
 
