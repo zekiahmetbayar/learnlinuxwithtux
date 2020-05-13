@@ -34,7 +34,7 @@ export class infoPage extends Component {
            <TouchableOpacity
                 onPress={
                     ()=>{
-                        Linking.openURL("https://github.com/kraftyazilim/tuxilelinuxogreniyorum");  
+                        Linking.openURL("https://github.com/zekiahmetbayar/learnlinuxwithtux");  
                     } 
                 }
                 >
