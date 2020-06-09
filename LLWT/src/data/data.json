@@ -103,7 +103,7 @@
 
 
         {   "id"   : "13",
-            "name" : "Apropos",
+            "name" : "apropos",
             "title": "apropos - Search the Manual Pages and Descriptions",
             "text" : "- Kullanım: apropos [anahtar_kelime] \n- Komut kılavuz dosyaları (man pages) kendi içlerinde tanım bilgileri içerirler.\n- Bu komut bütün açıklama dosyalarının tanımlarını tarar ve şayet bu tanımlar ile “anahtar_kelime” arasında bir eşleşme var ise eşleşen komutun adini ve tanımlamasını çıktı olarak verir.\n",
             "link" : "https://www.youtube.com/embed/T9HaJG6AZYA"
