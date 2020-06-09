@@ -81,12 +81,96 @@
             "text" : "- Kullanım: touch dosya_adı\n- Boş bir dosya oluşturmaya yarar.\n",
             "link" : "https://www.youtube.com/embed/ldcbRfN56SA"
 
+        },
+
+
+        {   "id"   : "11",
+            "name" : "clear",
+            "title": "clear - Clear the Terminal Screen",
+            "text" : "- Kullanım: clear\n- Mevcut terminal ekranını temizlemeye yarar.\n",
+            "link" : "https://www.youtube.com/embed/nAZjbr4c0N8"
+
+        },
+
+
+        {   "id"   : "12",
+            "name" : "sudo",
+            "title": "sudo - Execute a Command as Another User",
+            "text" : "- Kullanım: sudo [islem]\n- Sudo ile yaygın bir yanılgı, yalnızca sıradan bir kullanıcıya kök izinlerini sağlamak için kullanılmasıdır. Ama aslında, bu komut, varsayılan olarak root olan bir kullanıcı tarafından komut çalıştırmanıza izin verir.\n- Eğer terminale uzun bir kod yazdıysanız ve ‘Permission Denied’ hatası aldıysanız ' sudo ! ! ' komutu ile tekrar yazmaktan kurtulabilirsiniz.",
+            "link" : "https://www.youtube.com/embed/XiZlTtHFSuM"
+
+        },
+
+
+        {   "id"   : "13",
+            "name" : "Apropos",
+            "title": "apropos - Search the Manual Pages and Descriptions",
+            "text" : "- Kullanım: apropos [anahtar_kelime] \n- Komut kılavuz dosyaları (man pages) kendi içlerinde tanım bilgileri içerirler.\n- Bu komut bütün açıklama dosyalarının tanımlarını tarar ve şayet bu tanımlar ile “anahtar_kelime” arasında bir eşleşme var ise eşleşen komutun adini ve tanımlamasını çıktı olarak verir.\n",
+            "link" : "https://www.youtube.com/embed/T9HaJG6AZYA"
+
+        },
+
+
+        {   "id"   : "14",
+            "name" : "free",
+            "title": "free - Display Amount of Free Memory in the System",
+            "text" : "- Kullanım: free\n- Sistemdeki kullanılan ve boş olan bellek miktarını gösterir.\n",
+            "link" : "https://www.youtube.com/embed/p5TDAzN3TE0"
+
+        },
+
+
+        {   "id"   : "15",
+            "name" : "uptime",
+            "title": "uptime - Tell How Long the System Has Been Running",
+            "text" : "- Kullanım: uptime\n- Sistemin ne kadar süreden beri kesintisiz çalıştığına dair bilgi verir. Listelenen bilgiler şunlardan ibarettir: o anki saat, ne kadar süredir sistem çalışıyor, sistemdeki aktif kullanıcı sayısı, geçen 1, 5 ve 15 dakikadaki sistemin yük ortalaması.\n",
+            "link" : "https://www.youtube.com/embed/4bks6fB4MU4"
+
+        },
+
+
+        {   "id"   : "16",
+            "name" : "su",
+            "title": "su - Switch User",
+            "text" : "- Kullanım: su [kullanıcı_adı]\n- Sistemdeki başka bir kullanıcıya ya da kök kullanıcısına (root) geçmeyi sağlar.\n",
+            "link" : "https://www.youtube.com/embed/WssON5-VEGk"
+
+        },
+
+
+        {   "id"   : "17",
+            "name" : "xkill",
+            "title": "xKill - Kill a Client by Its X Resource",
+            "text" : "- Kullanım: xkill [kapatılmak istenen pencereye tıkla]\n- Yanıt vermeyen pencereleri kapatmak için kullanılır.\n",
+            "link" : "https://www.youtube.com/embed/vywy-DiGM3M"
+
+        },
+
+
+        {   "id"   : "18",
+            "name" : "sort",
+            "title": "sort - Sort Lines of Text Files",
+            "text" : "- Kullanım: sort [dosya_adı]\n- Parametre olarak verilen dosyayı alfabetik olarak sıralar..\n",
+            "link" : "https://www.youtube.com/embed/OlM05BVawYw"
+
+        },
+
+
+        {   "id"   : "19",
+            "name" : "wget",
+            "title": "wget - The Non-interactive Network Downloader",
+            "text" : "- Kullanım: wget [link]\n- İnternetten dosya indirmek icin kullanılır. HTTP, HTTPS ve FTP protokollerini destekler.\n",
+            "link" : "https://www.youtube.com/embed/Ne7FVBOmRuw"
+
+        },
+
+
+        {   "id"   : "20",
+            "name" : "top",
+            "title": "top - Display Linux Processes",
+            "text" : "- Kullanım: top\n- Sistemde çalışan uygulamaları listeler.\n- Kill komutu ile beraber kullanıldığında pid sayıları vasıtasıyla uygulamalar kapatılabilir.\n",
+            "link" : "https://www.youtube.com/embed/nAZjbr4c0N8"
+
         }
-
-
-
-
-       
-       
     ]
 }
