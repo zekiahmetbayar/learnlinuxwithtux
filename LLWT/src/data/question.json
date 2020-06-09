@@ -109,6 +109,116 @@
             "answer" : "touch penguenleruçsun",
             "output" : "total 8\n-rw-r--r--  1 tux tux   653 Ara 10 23:12  notlarım\ndrwxrwxr-x  2 tux tux  4096 Mar  3 22:06 penguenleruçsun"
             
+        },
+
+        {   "id"   : "11",
+            "category" : "clear",
+            "next" : "sudo",
+
+            "question": "Soru 1",
+            "text" : " 'cat' komutu ile terminal ekranına masaüstündeki kampanya metnini bastırmak isteyen Tux, yanlışlıkla annesinin balık tariflerini yazdığı dosyayı terminal ekranına bastırıyor. Yaptığı bu dikkatsizlikten dolayı terminal ekranını temizlemek isteyen Tux, hangi komut/komutları kullanmalıdır ?",
+            "answer" : "clear",
+            "output" : " "
+            
+        },
+
+        {   "id"   : "12",
+            "category" : "sudo",
+            "next" : "apropos",
+
+            "question": "Soru 2",
+            "text" : " Tux sistem kayıtlarını görüntülemek için 'cat /var/log/syslog' komut dizisini terminalde çalıştırmakta ancak her defasında [Permission denied] hatası almaktadır. Tux bu komut dizisini hangi şekilde çalıştırırsa sistem kayıtlarını listeleyebilir ? ",
+            "answer" : "sudo cat /var/log/syslog",
+            "output" : " "
+            
+        },
+
+        {   "id"   : "13",
+            "category" : "apropos",
+            "next" : "free",
+
+            "question": "Soru 3",
+            "text" : " Tux man komutunun açıklamasını öğrenmek istemektedir. Bunun için hangi komut/komutları kullanmalıdır ?",
+            "answer" : "apropos man",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "14",
+            "category" : "free",
+            "next" : "uptime",
+
+            "question": "Soru 4",
+            "text" : " Bilgisayarı sürekli olarak donan Tux, RAM'inin tamamen dolduğundan şüphelenmektedir. Anlık olarak RAM'in boşluğunu sorgulamak için hangi komut/komutları kullanması gerekir ?",
+            "answer" : "free",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "15",
+            "category" : "uptime",
+            "next" : "su",
+
+            "question": "Soru 5",
+            "text" : " Bilgisayar başında Linux komutlarını öğrenmeye dalan Tux, kaç saattir çalıştığını merak etmektedir. Tux'ın bilgisayarı açtığı ilk andan beri çalıştığı varsayılırsa, Tux hangi komut/komutları kullanarak çalışma süresini öğrenebilir ?",
+            "answer" : "uptime",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "16",
+            "category" : "su",
+            "next" : "xkill",
+
+            "question": "Soru 6",
+            "text" : " Tux'ın bilgisayarında annetux adında bir kullanıcı hesabı bulunan Anne Tux, aile fotoğraflarını bu bilgisayarda yedeklemektedir. Anne Tux'ın yedeklerinden kendi bebeklik fotoğraflarını bulmak isteyen Tux, [Permission denied] hatası ile karşılaşmaktadır. Anne Tux'ın şifresini bilen Tux, annesinin hesabına geçmek için hangi komut/komutları kullanmalıdır ?",
+            "answer" : "su annetux",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "17",
+            "category" : "xkill",
+            "next" : "sort",
+
+            "question": "Soru 7",
+            "text" : " Tux internet tarayıcısı üzerinden arama yaparken bir anda tarayıcı yanıt vermemektedir hatası ile karşılaşmıştır. Tarayıcıyı kapatamayan Tux'ın hangi komut ile görsel arayüzden tarayıcıyı kapatabilir ?",
+            "answer" : "xkill",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "18",
+            "category" : "sort",
+            "next" : "wget",
+
+            "question": "Soru 8",
+            "text" : " Linux üzerinde Düzenli İfadeler (Regular Expressions) konusuna merak salan Tux, düzenlemek istediği dosyanın satırlarını önce alfabetik olarak sıralamak istemektedir. regex.txt ismindeki bu dosyaya istediği işlemi uygulaması için hangi komut/komutları kullanması gerekmektedir ?",
+            "answer" : "sort regex.txt",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "19",
+            "category" : "wget",
+            "next" : "sort",
+
+            "question": "Soru 9",
+            "text" : " Kendisini anlattığı web sitesi olan merhababentux.com ' un yedeklerini kaybeden Tux, sitenin dosyalarını indirmek için hangi Linux komut/komutlarını kullanmalıdır ?",
+            "answer" : "wget merhababentux.com",
+            "output" : ""
+            
+        },
+
+        {   "id"   : "20",
+            "category" : "top",
+            "next" : "last ",
+
+            "question": "Soru 10",
+            "text" : " Bilgisayarı üzerinde çalışan uygulamaları görmek isteyen Tux, hangi komut/komutları kullanmalıdır ?",
+            "answer" : "top",
+            "output" : ""
+            
         }
 
 
